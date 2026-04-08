@@ -1,0 +1,89 @@
+:root {
+  --bg: #f5ede1;
+  --panel: rgba(255, 250, 244, 0.92);
+  --surface: rgba(255, 255, 255, 0.82);
+  --surface-muted: rgba(240, 232, 220, 0.88);
+  --border: rgba(68, 89, 96, 0.16);
+  --border-soft: rgba(68, 89, 96, 0.1);
+  --text-color: #4b5b60;
+  --muted-strong: #5c706d;
+  --heading-color: #182a30;
+  --accent: #1d5d6c;
+  --accent-contrast: #f8f2e9;
+  --panel-shadow: 0 24px 70px rgba(27, 45, 55, 0.12);
+  --font-sans: Aptos, "Segoe UI", sans-serif;
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", Consolas, monospace;
+  font: 17px/1.6 var(--font-sans);
+  color: var(--text-color);
+  background:
+    radial-gradient(circle at top left, rgba(29, 93, 108, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(212, 162, 101, 0.2), transparent 34%),
+    linear-gradient(180deg, #f7efe4 0%, #f1e6d7 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body,
+button,
+input {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--heading-color);
+  font-family: var(--font-heading);
+  line-height: 1.05;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.9rem);
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  color: var(--heading-color);
+}
